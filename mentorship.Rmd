@@ -360,7 +360,7 @@ ARRANGE(
       COLOR="#33669999"))
 ```
 
-The bars below show the proportion of mentees working with mentors as a function of their minority status. While `r mentee_minority_mentor_minority` of the mentees who work with mentors who belong to a minority group identify as minority, mentees who identify as minority make up only `r mentee_minority_mentor_majority` of mentees who work with mentors who do not belong to a minority group.
+The bars below show the matching of the minority status between mentees and mentors. While `r mentee_minority_mentor_minority` of the mentees who work with mentors that belong to a minority group also identify as minority, mentees who identify as minority make up only `r mentee_minority_mentor_majority` of the mentees who work with mentors who do not belong to a minority group.
 
 ```{r mentor_mentee_minoritry, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
@@ -374,7 +374,7 @@ BAR(D,
 
 ```
 
-To help with the reading of this graph, each column groups mentors based on their minority status (Yes/No answers on the x-axis), and each color reports the proportion of mentees based on their minority status who are working with these groups of mentors.
+Each column of the figure groups mentors based on their minority status (Yes/No answers on the x-axis are given to the question "was your mentor a member of a minority group"), and each color reports the minority status of the proportion of mentees who are working with these groups of mentors.
 
 ---
 
