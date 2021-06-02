@@ -211,7 +211,7 @@ ARRANGE <- function(A, B, HEIGHTS=c(1,1)){
 
 ## Introduction to the survey data summary
 
-!WARNING! [The survey is located here](https://forms.gle/RPksYdyihGuSBZMa8). **You still can take the survey or encourage others to do it**. Since the workflow that generates the figures and text below is fully reproducible, it is possible to update the results with additional data relatively quickly. If that every happens, this note will reflect that with dates and significant changes in results if there are any. The data below cover a snapshot of the survey results. For your reference, the time stamp of the last answer in the survey at the time of the analysis was **`r tail(df, n=1)$timestamp`** (MM/DD/YYYY HH:MM:SS).
+!WARNING! [The survey is located here](https://forms.gle/RPksYdyihGuSBZMa8). **You still can take the survey or encourage others to do it**. Since the workflow that generates the figures and text below is [fully reproducible](https://github.com/merenlab/mentorship-survey-workflow), it is possible to update the results with additional data relatively quickly. If that every happens, this note will reflect that with dates and significant changes in results if there are any. The data below cover a snapshot of the survey results. For your reference, the time stamp of the last answer in the survey at the time of the analysis was **`r tail(df, n=1)$timestamp`** (MM/DD/YYYY HH:MM:SS).
 
 !NOTICE! This section offers a general summary of mentees and mentors.
 
@@ -279,7 +279,7 @@ ARRANGE(
 
   BAX(D,
       X="mentor_then",
-      TITLE="Mantor career stage",
+      TITLE="Mentor career stage",
       SUBTITLE="Reported by mentees",
       COLOR="#33669999"))
 
@@ -320,7 +320,7 @@ D <- df[df$mentee_gender %in% c("Man", "Woman") & df$mentor_gender %in% c("Man",
 BAR(D,
     X="mentor_gender",
     Y="mentee_gender",
-    FILL_LEGEND = "Mantor gender",
+    FILL_LEGEND = "Mentor gender",
     TITLE="Gender matching between mentees and mentors",
     FILL_COLORS = c("#143D59", "#F4B41A"))
 
@@ -366,7 +366,7 @@ The bars below show the proportion of mentees working with mentors as a function
 BAR(D,
     X="mentor_minority",
     Y="mentee_minority",
-    FILL_LEGEND = "Mantor was a member of a minority group?",
+    FILL_LEGEND = "Mentor was a member of a minority group?",
     FILL_COLORS = c("#143D59", "#F4B41A"),
     TITLE="Minority status matching between mentors and mentees",
     SUBTITLE="Except their gender, and to the best of your knowledge, was your mentor a member of a minority\ngroup in the workplace based on their ethnic background and/or religion?'")
