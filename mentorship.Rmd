@@ -240,6 +240,7 @@ This is likely due to the limits of my reach on Twitter.
 ```{r country_setup, echo=FALSE}
 D <- df
 D$country <- fct_infreq(D$country, ordered = NA)
+all_countries <- GETSB(D, 'country')
 ```
 
 Another limitation of the survey is the representation of countries. Although there were at least one person filled the survey from **a total of `r length(unique(df$country)) - 1` countries**, the number of individuals from each country was heavily skewed, and the vast majority of those who filled the survey worked in **the United States**:
@@ -258,7 +259,7 @@ BAX(D,
     COLOR="#66336699")
 ```
 
-The figure below displays the list of countries with five or more survey results, but for the sake of posterity, each country and the number of responses looked like this: `r GETSB(D, 'country')` .
+The figure below displays the list of countries with five or more survey results, but for the sake of posterity, each country and the number of responses looked like this: `r all_countries`.
 
 
 ### Career stages
