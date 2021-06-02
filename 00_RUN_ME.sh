@@ -18,7 +18,7 @@ then
 
     rm -rf /Users/meren/github/merenlab.org/images/mentorship-survey/*
 
-    cp mentorship_files/figure-gfm/*png /Users/meren/github/merenlab.org/images/mentorship-survey/
+    cp mentorship_files/figure-gfm/*png header.png /Users/meren/github/merenlab.org/images/mentorship-survey/
 
     if test -f "mentorship_wisdom.md"; then
         cp mentorship_wisdom.md /Users/meren/github/merenlab.org/_includes/_mentorship_wisdom.md
