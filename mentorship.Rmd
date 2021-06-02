@@ -211,7 +211,7 @@ ARRANGE <- function(A, B, HEIGHTS=c(1,1)){
 
 ## Introduction to the survey data summary
 
-!WARNING! [The survey is located here](https://forms.gle/RPksYdyihGuSBZMa8). **You still can take the survey or encourage others to do it**. Since the workflow that generates the figures and text below is [fully reproducible](https://github.com/merenlab/mentorship-survey-workflow), it is possible to update the results with additional data relatively quickly. If that every happens, this note will reflect that with dates and significant changes in results if there are any. The data below cover a snapshot of the survey results. For your reference, the time stamp of the last answer in the survey at the time of the analysis was **`r tail(df, n=1)$timestamp`** (MM/DD/YYYY HH:MM:SS).
+!WARNING! [The survey is located here](https://forms.gle/RPksYdyihGuSBZMa8). **You still can take the survey or encourage others to do it**. Since the workflow that generates the figures and text below is [fully reproducible](https://github.com/merenlab/mentorship-survey-workflow), it is possible to update the results with additional data relatively quickly. If that ever happens, this note will reflect that with dates and significant changes in results if there are any. The data below cover a snapshot of the survey results. For your reference, the time stamp of the last answer in the survey at the time of the analysis was **`r tail(df, n=1)$timestamp`** (MM/DD/YYYY HH:MM:SS).
 
 !NOTICE! This section offers a general summary of mentees and mentors.
 
@@ -439,7 +439,7 @@ v_pos_specific <- PCT(D[D$mentee_experience_was_common_summary == "Specific to f
 v_neg_specific  <- PCT(D[D$mentee_experience_was_common_summary == "Specific to few" & D$experience_with_mentor == "1", ], D[D$experience_with_mentor == "1" & D$mentee_experience_was_common_summary != "", ])
 ```
 
-But interestingly, the extent of commonness of experiences were not uniform across distinct categories of mentorship outcomes. While only `r v_pos_specific` of the mentees who had a very positive experience with their mentors thought that their experience was specific to a few, `r v_neg_specific` of the mentees who had a very positive experience with their mentor believed that their experience was specific to few people trained by the same mentor:
+But interestingly, the extent of commonness of experiences were not uniform across distinct categories of mentorship outcomes. While only `r v_pos_specific` of the mentees who had a very positive experience with their mentors thought that their experience was specific to a few, as much as `r v_neg_specific` of the mentees who had a very negative experience with their mentor believed that their experience was specific to few people trained by the same mentor:
 
 ```{r experience_with_mentor_common_in_group_02, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
