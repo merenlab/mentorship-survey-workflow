@@ -367,12 +367,14 @@ The bars below show the proportion of mentees working with mentors as a function
 BAR(D,
     X="mentor_minority",
     Y="mentee_minority",
-    FILL_LEGEND = "Mentor was a member of a minority group?",
+    FILL_LEGEND = "Mentee was a member of a minority group?",
     FILL_COLORS = c("#143D59", "#F4B41A"),
     TITLE="Minority status matching between mentors and mentees",
     SUBTITLE="Except their gender, and to the best of your knowledge, was your mentor a member of a minority\ngroup in the workplace based on their ethnic background and/or religion?'")
 
 ```
+
+To help with the reading of this graph, each column groups mentors based on their minority status (Yes/No answers on the x-axis), and each color reports the proportion of mentees based on their minority status who are working with these groups of mentors.
 
 ---
 
