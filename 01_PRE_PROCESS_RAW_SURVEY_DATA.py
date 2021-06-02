@@ -253,8 +253,8 @@ wisdom_questions = {"mentor_biggest_shortcomings": """In this section you will f
 
 wisdom_subtitles = {"mentor_biggest_shortcomings": 'Mentees report on biggest shortcomings of their mentors',
                     "mentor_biggest_strengths"   : 'Mentees report on biggest strengths of their mentors',
-                    "mentee_advice_to_mentor"    : 'Mentees advice their mentors to do better',
-                    "mentee_advice_to_mentees"   : 'Mentees advice future mentees'}
+                    "mentee_advice_to_mentor"    : 'Mentees advise their mentors to do better',
+                    "mentee_advice_to_mentees"   : 'Mentees advise future mentees'}
 
 # this information is read from an output file we generate AFTER going through
 # the CURATED `mentorship_wisdom_all.txt` that will be generated in the next loop.

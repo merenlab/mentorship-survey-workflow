@@ -404,7 +404,7 @@ This shows that `r PCT(df[df$experience_with_mentor > 3, ])` of all `r nrow(df)`
 
 !NOTICE! OK. I will take a break here and tell you that I wrote the following part until the next subsection only after reading the experiences of mentees. I had not done it before to make sure they did not influence the direction of my preliminary analyses. After doing it, though, I had to come here and add the following text retrospectively.
 
-Most scientists are aware that mentor-mentee relationships can occasionally go either extremes of the experience spectrum. And considering all the stories I personally have witnessed as an ECR either through social media or by watching the journey of other ERCs as mentees, I did not know what the distribution of experiences was going to look like. But my interpretation of these results changed as I continued to work on the article, especially after I started reading the words of mentees.
+Most scientists are aware that mentor-mentee relationships can occasionally go either extremes of the experience spectrum. And considering all the stories I personally have witnessed as an ECR either through social media or by watching the journey of other ECRs as mentees, I did not know what the distribution of experiences was going to look like. But my interpretation of these results changed as I continued to work on the article, especially after I started reading the words of mentees.
 
 First, I found the large proportion of positive experiences pleasantly surprising. I even thought that it will likely serve as a relief also for you to learn that the vast majority of experiences among mentee-mentor pairs were positive.
 
@@ -510,7 +510,7 @@ BAR(D,
     SUBTITLE="What did ECRs do next once their experience with their mentor was over?")
 ```
 
-Even after *negative* or *very negative* experiences with a mentor, mantees seem to have moved on with their careers in academia in comparable proportions to those who had positive or very positive experiences. But these results on careers are to be taken with *two* grains of salt as this survey may be grossly underestimating the number of those who may have left the academic life (since they are less likely to see the survey and/or have the energy to fill it).
+Even after *negative* or *very negative* experiences with a mentor, mentees seem to have moved on with their careers in academia in comparable proportions to those who had positive or very positive experiences. But these results on careers are to be taken with *two* grains of salt as this survey may be grossly underestimating the number of those who may have left the academic life (since they are less likely to see the survey and/or have the energy to fill it).
 
 ## Factors that are associated with positive vs negative outcomes
 
@@ -520,7 +520,7 @@ Even after *negative* or *very negative* experiences with a mentor, mantees seem
 
 Does gender plays a role in the outcomes of mentee-mentor pairings? Does our collective mind have room for yet another [blatantly incorrect](https://www.nature.com/articles/s41467-020-19723-8) interpretation of the matter???
 
-Well, thankfully our survey suggests that the overall experiences of mantees with their mentors do not seem to correlate with the gender of the mentee:
+Well, thankfully our survey suggests that the overall experiences of mentees with their mentors do not seem to correlate with the gender of the mentee:
 
 ```{r mentee_gender_mentor_exp, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
@@ -542,7 +542,7 @@ BOX(D,
 ```
 The distribution of positive and negative experiences seem to be quite uniform across genders (just to note, while the x-axis shows the gender of mentees, the inline box plots highlight the distribution of the gender of mentors within a given category).
 
-One could also ask whether the overall experiences of mantees with their mentors correlate with the gender of their mentor:
+One could also ask whether the overall experiences of mentees with their mentors correlate with the gender of their mentor:
 
 ```{r mentor_gender_mentor_exp, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
@@ -641,7 +641,7 @@ BOX(D,
 
 Mentors who were aware of their shortcomings in mentoring had more likely to have mentees with whom they had very positive relationships.
 
-Here is a data-driven tip: If you are an ERC considering to start working with a new mentor, ask them what they think is their biggest shortcoming in mentorship. Then ask the same question to their trainees. It may be a good sign if they match. If you are a mentor, think about what might be your shortcomings in mentoring people.
+Here is a data-driven tip: If you are an ECR considering to start working with a new mentor, ask them what they think is their biggest shortcoming in mentorship. Then ask the same question to their trainees. It may be a good sign if they match. If you are a mentor, think about what might be your shortcomings in mentoring people.
 
 ### Mentors asking for feedback
 
@@ -732,7 +732,7 @@ grid.arrange(
 
 ### Are mentors making it easy to raise mentorship concerns
 
-If a mentor is not explicitly asking for feedback from their mantees on the mentorship they are receiving, it may not be the end of the world, if they are at least making it easier for their mentees to raise their concerns. However, most mentors seem to make it difficult for their mentees to raise their concerns with them:
+If a mentor is not explicitly asking for feedback from their mentees on the mentorship they are receiving, it may not be the end of the world, if they are at least making it easier for their mentees to raise their concerns. However, most mentors seem to make it difficult for their mentees to raise their concerns with them:
 
 ```{r mentor_mentorship_concerns_01, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 easiness <- c( "Made it easy", "Made it difficult")
