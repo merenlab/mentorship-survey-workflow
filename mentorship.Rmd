@@ -243,7 +243,7 @@ D$country <- fct_infreq(D$country, ordered = NA)
 all_countries <- GETSB(D, 'country')
 ```
 
-Another limitation of the survey is the representation of countries. Although there were at least one person filled the survey from **a total of `r length(unique(df$country)) - 1` countries**, the number of individuals from each country was heavily skewed, and the vast majority of those who filled the survey worked in **the United States**:
+Another limitation of the survey is the geographic representation. Although the survey was filled by individuals from **a total of `r length(unique(df$country)) - 1` countries**, the number of individuals from each country was heavily skewed, with the vast majority from **the United States**:
 
 ```{r country, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
@@ -313,7 +313,7 @@ ARRANGE(
 
 ```
 
-While mentees who were men were shared equally between men and women mentors, a **larger proportion of women worked with mentors who were women**.
+While mentees who were men were shared equally between men and women mentors, a **larger proportion of women worked with mentors who were also women**.
 
 ```{r mentor_mentee_gender, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 D <- df[df$mentee_gender %in% c("Man", "Woman") & df$mentor_gender %in% c("Man", "Woman"), ]
@@ -343,7 +343,7 @@ mentee_minority_mentor_majority = PCT(D[D$mentor_minority == "No" & D$mentee_min
 
 ```
 
-The survey also collected data on the minority status of mentees and mentors they worked with. The question was aimed to identify those who, except their gender, were a member of a minority group in their workplace based on ethnic background and/or religion. While **`r mentee_minority_pct` of mentees were a member of a minority group**, only **`r mentor_minority_pct` of mentors belonged to a minority group**, to the best of the knowledge of their mentees.
+The survey also collected data on the minority status of mentees and mentors they worked with. The question was aimed to identify those who, except their gender, were a member of a minority group in their workplace based on ethnic background and/or religion. While **`r mentee_minority_pct` of mentees were members of a minority group**, only **`r mentor_minority_pct` of mentors belonged to a minority group**, to the best of the knowledge of their mentees.
 
 ```{r mentee_mentor_minority, echo=FALSE, fig.width=9, fig.height=7, dpi=300}
 
@@ -360,21 +360,19 @@ ARRANGE(
       COLOR="#33669999"))
 ```
 
-The bars below show the matching of the minority status between mentees and mentors. Among mentors who belong to a minority group, `r mentee_minority_mentor_minority` of their mentees also identify as a minority. However, among mentors who do not belong to a minority group, only `r mentee_minority_mentor_majority` of their mentees identify as a minority.
+The bars below show the proportion of mentees working with mentors as a function of their minority status. While `r mentee_minority_mentor_minority` of the mentees who work with mentors who belong to a minority group identify as minority, mentees who identify as minority make up only `r mentee_minority_mentor_majority` of mentees who work with mentors who do not belong to a minority group.
 
 ```{r mentor_mentee_minoritry, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
 BAR(D,
     X="mentor_minority",
     Y="mentee_minority",
-    FILL_LEGEND = "Mentee was a member of a minority group?",
+    FILL_LEGEND = "Mentor was a member of a minority group?",
     FILL_COLORS = c("#143D59", "#F4B41A"),
     TITLE="Minority status matching between mentors and mentees",
     SUBTITLE="Except their gender, and to the best of your knowledge, was your mentor a member of a minority\ngroup in the workplace based on their ethnic background and/or religion?'")
 
 ```
-
-Each column of the figure groups mentors based on their minority status (Yes/No answers on the x-axis are given to the question "was your mentor a member of a minority group"), and each color reports the minority status of the proportion of mentees who are working with these groups of mentors.
 
 ---
 
@@ -406,7 +404,7 @@ This shows that `r PCT(df[df$experience_with_mentor > 3, ])` of all `r nrow(df)`
 
 !NOTICE! OK. I will take a break here and tell you that I wrote the following part until the next subsection only after reading the experiences of mentees. I had not done it before to make sure they did not influence the direction of my preliminary analyses. After doing it, though, I had to come here and add the following text retrospectively.
 
-Most scientists are aware that mentor-mentee relationships can occasionally go either extremes of the experience spectrum. And considering all the stories I personally have witnessed as an ECR either through social media or by watching the journey of other ECRs as mentees, I did not know what the distribution of experiences was going to look like. But my interpretation of these results changed as I continued to work on the article, especially after I started reading the words of mentees.
+Most scientists are aware that mentor-mentee relationships can occasionally go either extremes of the experience spectrum. And considering all the stories I personally have witnessed as an ECR either through social media or by watching the journey of other ERCs as mentees, I did not know what the distribution of experiences was going to look like. But my interpretation of these results changed as I continued to work on the article, especially after I started reading the words of mentees.
 
 First, I found the large proportion of positive experiences pleasantly surprising. I even thought that it will likely serve as a relief also for you to learn that the vast majority of experiences among mentee-mentor pairs were positive.
 
@@ -419,13 +417,13 @@ She was a covert narcissist who changed the goalposts to suit her narrative on a
 
 As I went through the responses, my initial relief started to feel more and more embarrassing. The reason I decided to share this relatively off-topic personal experience of mine openly is because I believe this attitude is probably a significant part of the problem, and likely more common than those who did not suffer from the consequences of very negative experiences typically appreciate. It is much easier for those who are in the lucky majority to see the proportions of those who found themselves in the unlucky minority as mere statistics. `r PCT(df[df$experience_with_mentor == 1, ])` indeed makes a small fraction of all mentees in science. But people who are assaulted, or people who suffer from rare diseases make up a very small fraction of the society, too, and much less than `r PCT(df[df$experience_with_mentor == 1, ])` in most societies. But for those small number of people who are assaulted or diagnosed with a rare disease, life changes irreversibly.
 
-This personal experience convinced me that this is the true power of this survey. The power of this survey is not the opportunities it enables for data analyses or summary of positive or negative experiences as a function of categories the survey fits people into. It is the words of those who lived these experiences, and the power and the magnitude of those words that can convince us to the importance of working towards an ideal where all mentee-mentor experiences are positive or very positive, and that there is a lot more to do to achieve that.
+This personal experience convinced me that this is the true power of this survey. The power of this survey is not the opportunities for data analyses or summary of positive or negative experiences as a function of categories the survey fits people into. It is the words of those who lived these experiences, and the power and the magnitude of those words that can convince us the importance of working towards an ideal where all mentee-mentor experiences are positive or very positive, and that there is a lot more to do to achieve that.
 
-This section stil exists as I managed to fight off the desire to delete everything I've done until this realization, and let the text continue to try to offer a general summary of the data for posterity before leaving you with [the words of early career researchers](#the-words-of-early-career-researchers).
+This section still exists as I managed to fight off the desire to delete everything I've done until this realization, and let the text continue to try to offer a general summary of the data for posterity before leaving you with [the words of early career researchers](#the-words-of-early-career-researchers).
 
 ### Commonality of experiences within a group
 
-In the most general sense, ECRs believe that their experiences with their mentors were common to all mentees trained by their mentor:
+In the most general sense, ECRs believe that their experiences were common to all other mentees trained by the same mentor:
 
 ```{r experience_with_mentor_common_in_group_01, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 D <- df
@@ -512,7 +510,7 @@ BAR(D,
     SUBTITLE="What did ECRs do next once their experience with their mentor was over?")
 ```
 
-Even after *negative* or *very negative* experiences with a mentor, mentees seem to have moved on with their careers in academia in comparable proportions to those who had positive or very positive experiences. But these results on careers are to be taken with *two* grains of salt as this survey may be grossly underestimating the number of those who may have left the academic life (since they are less likely to see the survey and/or have the energy to fill it).
+Even after *negative* or *very negative* experiences with a mentor, mantees seem to have moved on with their careers in academia in comparable proportions to those who had positive or very positive experiences. But these results on careers are to be taken with *two* grains of salt as this survey may be grossly underestimating the number of those who may have left the academic life (since they are less likely to see the survey and/or have the energy to fill it).
 
 ## Factors that are associated with positive vs negative outcomes
 
@@ -522,7 +520,7 @@ Even after *negative* or *very negative* experiences with a mentor, mentees seem
 
 Does gender plays a role in the outcomes of mentee-mentor pairings? Does our collective mind have room for yet another [blatantly incorrect](https://www.nature.com/articles/s41467-020-19723-8) interpretation of the matter???
 
-Well, thankfully our survey suggests that the overall experiences of mentees with their mentors do not seem to correlate with the gender of the mentee:
+Well, thankfully our survey suggests that the overall experiences of mantees with their mentors do not seem to correlate with the gender of the mentee:
 
 ```{r mentee_gender_mentor_exp, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
@@ -544,7 +542,7 @@ BOX(D,
 ```
 The distribution of positive and negative experiences seem to be quite uniform across genders (just to note, while the x-axis shows the gender of mentees, the inline box plots highlight the distribution of the gender of mentors within a given category).
 
-One could also ask whether the overall experiences of mentees with their mentors correlate with the gender of their mentor:
+One could also ask whether the overall experiences of mantees with their mentors correlate with the gender of their mentor:
 
 ```{r mentor_gender_mentor_exp, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
@@ -643,7 +641,7 @@ BOX(D,
 
 Mentors who were aware of their shortcomings in mentoring had more likely to have mentees with whom they had very positive relationships.
 
-Here is a data-driven tip: If you are an ECR considering to start working with a new mentor, ask them what they think is their biggest shortcoming in mentorship. Then ask the same question to their trainees. It may be a good sign if they match. If you are a mentor, think about what might be your shortcomings in mentoring people.
+Here is a data-driven tip: If you are an ERC considering to start working with a new mentor, ask them what they think is their biggest shortcoming in mentorship. Then ask the same question to their trainees. It may be a good sign if they match. If you are a mentor, think about what might be your shortcomings in mentoring people.
 
 ### Mentors asking for feedback
 
@@ -734,7 +732,7 @@ grid.arrange(
 
 ### Are mentors making it easy to raise mentorship concerns
 
-If a mentor is not explicitly asking for feedback from their mentees on the mentorship they are receiving, it may not be the end of the world, if they are at least making it easier for their mentees to raise their concerns. However, most mentors seem to make it difficult for their mentees to raise their concerns with them:
+If a mentor is not explicitly asking for feedback from their mantees on the mentorship they are receiving, it may not be the end of the world, if they are at least making it easier for their mentees to raise their concerns. However, most mentors seem to make it difficult for their mentees to raise their concerns with them:
 
 ```{r mentor_mentorship_concerns_01, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 easiness <- c( "Made it easy", "Made it difficult")
