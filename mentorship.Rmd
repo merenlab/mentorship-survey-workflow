@@ -360,7 +360,7 @@ ARRANGE(
       COLOR="#33669999"))
 ```
 
-The bars below show the matching of the minority status between mentees and mentors. While `r mentee_minority_mentor_minority` of the mentees who work with mentors that belong to a minority group also identify as minority, mentees who identify as minority make up only `r mentee_minority_mentor_majority` of the mentees who work with mentors who do not belong to a minority group.
+The bars below show the matching of the minority status between mentees and mentors. Among mentors who belong to a minority group, `r mentee_minority_mentor_minority` of their mentees also identify as a minority. However, among mentors who do not belong to a minority group, only `r mentee_minority_mentor_majority` of their mentees identify as a minority.
 
 ```{r mentor_mentee_minoritry, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
