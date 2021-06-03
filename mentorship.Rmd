@@ -520,9 +520,9 @@ Even after *negative* or *very negative* experiences with a mentor, mentees seem
 
 ### Gender of the mentee or the mentor
 
-Does gender plays a role in the outcomes of mentee-mentor pairings? Does our collective mind have room for yet another [blatantly incorrect](https://www.nature.com/articles/s41467-020-19723-8) interpretation of the matter???
+Does gender play a role in the outcomes of mentee-mentor pairings? Does our collective mind have room for yet another [blatantly incorrect](https://www.nature.com/articles/s41467-020-19723-8) interpretation of the influence on gender on critical matters???
 
-Well, thankfully our survey suggests that the overall experiences of mentees with their mentors do not seem to correlate with the gender of the mentee:
+Well, thankfully the survey data suggest that the overall experiences of mentees with their mentors do not seem to correlate with the gender of the mentee:
 
 ```{r mentee_gender_mentor_exp, echo=FALSE, fig.width=9, fig.height=5, dpi=300}
 
@@ -542,6 +542,7 @@ BOX(D,
     SUBTITLE="Considering its entirety and its influence on your wellbeing and career, how would you characterize\nyour experience with your mentor?")
 
 ```
+
 The distribution of positive and negative experiences seem to be quite uniform across genders (just to note, while the x-axis shows the gender of mentees, the inline box plots highlight the distribution of the gender of mentors within a given category).
 
 One could also ask whether the overall experiences of mentees with their mentors correlate with the gender of their mentor:
