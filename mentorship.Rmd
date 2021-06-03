@@ -406,7 +406,7 @@ This shows that `r PCT(df[df$experience_with_mentor > 3, ])` of all `r nrow(df)`
 
 !NOTICE! OK. I will take a break here and tell you that I wrote the following part until the next subsection only after reading the experiences of mentees. I had not done it before to make sure they did not influence the direction of my preliminary analyses. After doing it, though, I had to come here and add the following text retrospectively.
 
-Most scientists are aware that mentor-mentee relationships can occasionally go either extremes of the experience spectrum. And considering all the stories I personally have witnessed as an ECR either through social media or by watching the journey of other ECRs as mentees, I did not know what the distribution of experiences was going to look like. But my interpretation of these results changed as I continued to work on the article, especially after I started reading the words of mentees.
+Most scientists are aware that mentor-mentee relationships can occasionally go either extremes of the experience spectrum. And considering all the stories I personally have witnessed as an ECR either through social media or by watching the journey of other ECRs as mentees, I did not know what the distribution of experiences was going to look like. But my interpretation of these results changed as I continued to work on the blog, especially after I started reading the words of mentees.
 
 First, I found the large proportion of positive experiences pleasantly surprising. I even thought that it will likely serve as a relief also for you to learn that the vast majority of experiences among mentee-mentor pairs were positive.
 
@@ -516,7 +516,7 @@ Even after *negative* or *very negative* experiences with a mentor, mentees seem
 
 ## Factors that are associated with positive vs negative outcomes
 
-!NOTICE! This section aims to investigate strong associations by benchmarking various categorical data and positive or negative outcomes of mentor-mentee relationships.
+!NOTICE! This section aims to visualize associations between various categories of mentors and mentees and positive or negative outcomes of mentor-mentee relationships.
 
 ### Gender of the mentee or the mentor
 
@@ -683,7 +683,7 @@ BOX(D,
 
 ```
 
-It is indeed extremely difficult to establish a causative relationship here. But when it comes to asking for feedback, it seems women do it slightly more than men, Assistant Professors do it slightly more than Professors, and mentors who are considered to be 'good' by their colleagues (according to mentees) do it more than those who are not particularly considered good by their colleagues:
+It is indeed extremely difficult to establish or test any hypothesis here, and it is not the purpose of this blog post. But when it comes to asking for feedback, it seems women do it slightly more than men, Assistant Professors do it slightly more than Professors, and mentors who are considered to be 'good' by their colleagues (according to mentees) do it more than those who are not particularly considered good by their colleagues:
 
 ```{r mentor_x_asking_feedback, echo=FALSE, fig.width=10, fig.height=10, dpi=300}
 Countries <- c("United States", "Germany", "United Kingdom")
